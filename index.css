@@ -1,0 +1,44 @@
+@viewport {
+
+    width: device-width;
+
+ }
+ @media screen and (min-width: 780px) {
+    .full-width-img {
+        margin: auto;
+        width: 90%;
+    }
+ }
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+    width: 30vw;
+    height: 50vh;
+    border: 10px solid #000;
+}
+#Titulo{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+.labels{
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inputs{
+    height: 2.5em;
+    width: 20em;
+}
