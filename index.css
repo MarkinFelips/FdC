@@ -26,8 +26,8 @@ main{
     justify-content: center;
     align-items: center;
     background-color: silver;
-    width: 30vw;
-    height: 50vh;
+    width: 50vw;
+    height: 65vh;
     border: 10px solid #000;
 }
 #Titulo{
@@ -37,8 +37,31 @@ main{
 .labels{
     font-weight: 1000;
     font-family: 'Courier New', Courier, monospace;
+    
 }
-.inputs{
+#Nome{
     height: 2.5em;
     width: 20em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#Email{
+    height: 2.5em;
+    width: 20em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#Mensagem{
+    width: 20em;
+    border-radius: 5px;
+}
+#Botao{
+    width: 5em;
+    height: 2em;
+    background-color: #79DE74;
+    border-radius: 5px;
+}
+.Erro{
+    color: #ff0000;
+    display: none;
 }

@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="Script" type="script/JavaScript" href="index.js">
     <title>Formulário de Contato</title>
 </head>
 <body>
     <main>
         <section id="content">
-            <form>
+            <form id="Formulario">
                 <section id="Titulo">
                     <h1>Formulário de Contato</h1>
                 </section>
 
+                <label class="labels">Nome:</label>
+
                 <section>
-                    <label class="labels">Nome:</label>
-                    <input type="text" name="Nome" class="inputs">
+                    <input type="text" name="Nome" id="Nome" class="invalido" required>
+                    <div class="Erro" id="ErroNome"></div>
                 </section>
 
+                <label class="labels">Email:</label>
+
                 <section>  
-                    <label class="labels">Email:</label>
-                    <input type="email" name="Email" class="inputs">
+                    <input type="email" name="Email" id="Email" class="invalido" required>
+                    <div class="Erro" id="ErroEmail"></div>
                 </section>
-                
+
+                <label class="labels">Mensagem:</label>
                 <section>
-                    <label class="labels">Mensagem:</label>
-                    <textarea id="Mensagem" rows="6" name="Mensagem"></textarea>
+                    <textarea id="Mensagem" rows="6" name="Mensagem" class="invalido" required></textarea>
+                    <div class="Erro" id="ErroMensagem"></div>
                 </section>
-                <button><a>Enviar</a></button>
+                <button id="Botao"><a>Enviar</a></button>
             </form>
         </section>
     </main>
